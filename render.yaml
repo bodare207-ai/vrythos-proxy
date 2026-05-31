@@ -6,9 +6,9 @@ services:
     buildCommand: npm install
     startCommand: node cloudflare-proxy.js
     envVars:
-      - key: PORT
-        value: 3001
       - key: CLOUDFLARE_ACCOUNT_ID
-        sync: false  # You'll set this manually in Render dashboard
+        sync: false
+        value: YOUR_ACCOUNT_ID_HERE
       - key: CLOUDFLARE_API_TOKEN
         sync: false
+        value: YOUR_API_TOKEN_HERE
